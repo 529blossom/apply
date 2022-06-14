@@ -1,0 +1,57 @@
+/*컬러*/
+$line-color: #e3e5ed;
+$txt-color: #656565;
+
+
+
+.tbl-white {
+    .tbl-white-view {
+        width: 100%;
+        thead {
+            tr {
+                &:hover {
+                    background: #e0ecff;
+                }
+                th {
+                    background: #fff;
+                    padding: 10px 0;
+                    border-top: 1px solid $line-color;
+                    border-bottom: 1px solid $line-color;
+                    font-weight: bold;
+                    vertical-align: middle;
+                }
+                td {
+                    border-top: 1px solid $line-color;
+                    border-bottom: 1px solid $line-color;
+                    border-right: 1px solid $line-color;
+                    padding: 10px 0 10px 10px;
+                    vertical-align: middle;
+                    &:last-child {
+                        border-right: none;
+                    }
+                }
+            }        
+        }
+    }
+    .paging {
+        text-align: center;
+        font-size: 13px;
+        ul {
+            li {
+                margin: 0 10px;
+                display: inline-block;
+                a {
+                    color: $txt-color;
+                    &:hover {
+                        color: #5d9cec;
+                        font-weight: bold;
+                    }
+                }
+                .carrot-active {
+                    color: #5d9cec;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

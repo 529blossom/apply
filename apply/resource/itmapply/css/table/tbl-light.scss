@@ -1,0 +1,229 @@
+/*컬러*/
+$tbl-th-color: #f0f3f8;
+$line-color: #e3e5ed;
+$txt-color: #656565;
+
+.tbl-light {
+    .back-default {background: $tbl-th-color;}
+    .back-gray {background: #f4f4f4;}
+    .back-red {background: #ffe0e0 !important;}
+    .back-yellow {background: #fffedb !important;}
+    .back-blue {background: #e0f2ff !important;}
+    .back-green {background: #e0ffef !important;}
+    .tbl-light-view {
+        width: 100%;
+        font-size: 13px;
+        thead {
+            tr {
+                th {
+                    background: $tbl-th-color;
+                    padding: 6px 10px;
+                    font-weight: bold;
+                    border: 1px solid $line-color;
+                    vertical-align: middle;
+                    .file-support-info{
+                        color: red;
+                    }
+                }
+                
+                td {
+                    background: #fff;
+                    border-top: 1px solid $line-color;
+                    border-right: 1px solid $line-color;
+                    border-bottom: 1px solid $line-color;
+                    padding: 6px 10px 6px 10px;
+                    vertical-align: middle;
+                    word-break: break-word;
+                    a {
+                        line-height: 20px;
+                    }
+                    .overflow {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        max-width: 800px;
+                    }
+                }
+                .back-gray {background: #bebebe;}
+                .back-red {background: #ffe0e0;}
+                .back-yellow {background: #fffedb;}
+            }        
+        }
+
+        
+    }
+
+    .tbl-light-list {
+        width: 100%;
+        font-size: 13px;
+        thead {
+            tr {
+                th {
+                    background: $tbl-th-color;
+                    padding: 8px 5px;
+                    font-weight: bold;
+                    border-top: 1px solid $line-color;
+                    vertical-align: middle;
+                    line-height: 17px;
+                }
+            }
+        }
+        tbody {
+            tr {
+                background: #fff;
+                &:hover {
+                    background: #f7f9fc !important;
+                }
+				&.active {
+					td {
+						background: #daf5ff;
+					}
+				}
+				td {
+                    border-top: 1px solid $line-color;
+                    border-bottom: 1px solid $line-color;
+                    padding: 8px 5px;
+                    vertical-align: middle;
+                    word-break: break-word;
+                    line-height: 17px;
+                    a {
+                        line-height: 23px;
+                    }
+					&.border-l {
+						border-left: 1px solid $line-color;
+					}
+				}
+                .overflow {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                .overflow2{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 2;
+                    line-height: 18px;
+                    word-wrap: break-word;
+                }
+                .border-right {
+                    border-right: 1px solid $line-color;
+                }
+            }
+            .notice {
+                background: #daf5ff;
+			}
+        }
+    }
+
+    .tbl-light-list-line {
+        width: 100%;
+        font-size: 13px;
+        border-top: 1px solid $line-color;
+        thead {
+            tr {
+                th {
+                    background: $tbl-th-color;
+                    padding: 6px 5px;
+                    font-weight: bold;
+                    border-bottom: 1px solid $line-color;
+                    border-right: 1px solid $line-color;
+                    border-left: 1px solid $line-color;
+                    vertical-align: middle;
+                }
+                .back-white {
+                    background: #fff;
+                }
+            }
+        }
+        tbody {
+            tr {
+                background: #fff;
+                td {
+                    border-bottom: 1px solid $line-color;
+                    border-right: 1px solid $line-color;
+                    border-left: 1px solid $line-color;
+                    padding: 6px 5px;
+                    vertical-align: middle;  
+                    word-break: break-word;
+                    a {
+                        line-height: 23px;
+                    }                  
+                }
+                .back-danger {
+                    background: #ffbaba;
+                }
+            }
+        }
+    }
+
+    .tbl-light-month {
+        width: 100%;
+        font-size: 13px;
+        border-top: 1px solid $line-color;
+        thead {
+            tr {
+                th {
+                    background: $tbl-th-color;
+                    padding: 6px 5px;
+                    font-weight: bold;
+                    border-bottom: 1px solid $line-color;
+                    border-right: 1px solid $line-color;
+                    border-left: 1px solid $line-color;
+                    width: 14.2%;
+                }
+            }
+        }
+        tbody {
+            tr {
+                background: #fff;
+                td {
+                    border-bottom: 1px solid $line-color;
+                    border-right: 1px solid $line-color;
+                    border-left: 1px solid $line-color;
+                    padding: 6px 5px;
+                    vertical-align: middle;
+                    div {
+                        min-height: 100px;
+                        span {                        
+                            color: #bbbbbb;
+                            font-weight: bold;
+                        }
+                        ul {
+                            li {
+                                margin-bottom: 5px;
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                                span {
+                                    color: #656565;
+                                }
+                                text-align: left;
+                                word-break: break-all;
+                                background: #fff8db;
+                            }
+                        }
+                    }
+                }
+                .bg {
+                    background: #fff8db;
+				}
+				.bg-hold {
+					background: #bbbbbb;
+				}
+            }
+        }
+    }
+
+    .comment {
+        li {
+            width: 100%;
+            border-top: 1px solid $line-color;
+            padding: 10px;
+            background: #fff;
+            &:last-child {
+                border-bottom: 1px solid $line-color;
+            }
+        }
+    }
+}
